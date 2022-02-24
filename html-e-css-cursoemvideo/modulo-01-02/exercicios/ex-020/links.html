@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-classe
+            :: = pseudo-element
+            > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blueviolet;
+
+        }
+
+        a:hover{
+            color: purple;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: violet;
+        }
+
+        a::before{
+            content: '➤ ';
+        }
+
+        .channel::after{
+            content: ' 😎';
+        }
+
+        .github::after {
+            content: ' 🤓';
+        }
+
+        .linkedin::after {
+            content: ' 👨🏽‍💻';
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <li><a href="https://github.com/mrsaturnino" target="_blank" class="github">Meu perfil do GitHub</a></li>
+    <li><a href="https://www.youtube.com/channel/UC4x3jzzqF9EabeeERtdF8xQ" target="_blank" class="channel">Meu canal do Youtube</a></li>
+    <li><a href="https://linkedin/in/andresaturnino" class="linkedin" target="_blank">Meu Linkedin</a></li>
+    
+</body>
+</html>

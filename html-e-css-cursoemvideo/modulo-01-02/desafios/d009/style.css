@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 12pt;
+    font-family: Arial;
+}
+
+body#home {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.hardhtml{
+    text-align: center;
+}
+
+.javapyth{
+    text-align: center;
+}
+
+.hardware {
+    text-align: center;
+    background-color: black;
+    
+}
+
+.html5 {
+    text-align: center;
+    background-color: black;
+}
+
+.javascript {
+    text-align: center;
+    background-color: black;
+}
+
+.python {
+    text-align: center;
+    background-color: black;
+}
+
+
+
+
+
+
+
+

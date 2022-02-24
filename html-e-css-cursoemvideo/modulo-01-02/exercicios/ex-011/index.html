@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <hr>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p-img.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m-img.png" type="image/png">
+        <img src="imagens/g-img.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio em HTML5</h1> <!--.MP3 .WAV .OGG-->
+    <hr>
+    <p> &#x1F3B5; <strong>A. Fulero - Lukewarm Hazy</strong></p>
+    
+    <h2>Primeira forma</h2>
+    <audio src="midia/lukewarmhazy.mp3" controls autoplay></audio>
+    
+    <h2>Segunda forma</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/lukewarmhazy.mp3" type="audio/mpeg">
+        <source src="midia/lukewarmhazy.ogg" type="audio/ogg">
+        <source src="midia/lukewarmhazy.wav" type="audio/wav">
+            <p>Infelizmente o navegador não carrega este áudio.
+                <a href="midia/lukewarmhazy.mp3">Clique aqui para baixar este áudio.</a>
+    </audio>
+    
+    <h1>Reproduzindo vídeos em HTML5</h1> <!--.MP4 .MP4v .WEBM .OGV-->
+    <hr>
+
+
+</body>
+</html>
