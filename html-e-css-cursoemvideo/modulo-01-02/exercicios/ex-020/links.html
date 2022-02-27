@@ -12,7 +12,7 @@
             # = id
             . = class
             : = pseudo-classe
-            :: = pseudo-element
+            :: = pseudo-elemento
             > = children
         */
 
@@ -26,25 +26,25 @@
             font-weight: bold;
         }
 
-        a:visited{
+        a:visited{ /*Links já visitados ficarão na cor "blueviolet".*/
             color: blueviolet;
 
         }
 
-        a:hover{
+        a:hover{ /*Ao passar o cursor do mouse por cima dos links, ele ficará na cor "purple".*/
             color: purple;
             text-decoration: underline;
         }
 
-        a:active{
+        a:active{ /*Ao clicar no link, ele ficará na cor "violet". (Experimente clicar e segurar)*/
             color: violet;
         }
 
-        a::before{
+        a::before{ /*Pseudo elemento que define o que virá (antes, nesse caso) antes ou após do link.*/
             content: '➤ ';
         }
 
-        .channel::after{
+        .channel::after{ /*Observe que podemos utilizar os pseudo-elementos com classes. Também podemos com id's.*/
             content: ' 😎';
         }
 
@@ -62,8 +62,7 @@
 <body>
     <h1>Personalizando Links</h1>
     <li><a href="https://github.com/mrsaturnino" target="_blank" class="github">Meu perfil do GitHub</a></li>
-    <li><a href="https://www.youtube.com/channel/UC4x3jzzqF9EabeeERtdF8xQ" target="_blank" class="channel">Meu canal do Youtube</a></li>
-    <li><a href="https://linkedin/in/andresaturnino" class="linkedin" target="_blank">Meu Linkedin</a></li>
+    <li><a href="https://www.linkedin.com/in/andrsaturnino/" class="linkedin" target="_blank">Meu Linkedin</a></li>
     
 </body>
 </html>
