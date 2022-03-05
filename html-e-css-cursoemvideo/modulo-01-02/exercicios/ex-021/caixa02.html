@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(191, 206, 211, 0.755);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(145, 145, 145);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(111, 108, 108);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgb(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 8px rgb(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: rgba(179, 201, 208, 0.994);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(146, 156, 158);
+            width: 250px;
+        }
+
+        footer {
+            background-color: rgb(41, 41, 41);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola { /*Criando uma bola no final da página utilizando o border-radius:;*/
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main> <!--Tag do conteúdo principal do site-->
+        <section id="Assuntos"> <!--seção dentro do site-->
+            <p>Esportes | Política | Tecnologia</p>
+        </section>
+        <section id="Notícias">
+            <article> <!--"Artigo" da seção notícias-->
+                <h2>Notícia sobre o Brasil na Copa do Mundo de 2022</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt est illo totam ratione commodi, ipsam explicabo tempore facere voluptatum ex nostrum velit voluptatem labore nesciunt minima error, aperiam amet sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nulla neque eum nostrum placeat voluptatibus reiciendis rem reprehenderit harum natus aut exercitationem, itaque fuga similique debitis deserunt rerum omnis sunt. <a href="#">Leia a notícia completa aqui.</a></p>
+                
+                
+                <aside><p>Artigo escrito por André Saturnino</p></aside> <!--"aside" se trata de um conteudo periférico, relacionado ao artigo-->
+            </article>
+            <article>
+                <h2>Notícia sobre corrupção em Brasília</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nostrum, minus architecto aut hic laudantium, saepe expedita aperiam minima suscipit explicabo vero quo delectus non eveniet eius nobis illo commodi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis repudiandae dolorem atque, porro incidunt ad dolore! Fuga praesentium architecto labore magni voluptatibus commodi atque similique reprehenderit, accusamus eius dolores unde.</p>
+
+                <aside><p>Artigo escrito por André Saturnino</p></aside>
+            </article>
+            <article>
+                <h2>Brasileiro desenvolve software educativo para escolas públicas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui voluptatibus quod sed modi aut, perspiciatis laborum pariatur, et, exercitationem sunt! Aperiam perferendis praesentium ullam saepe rerum harum similique dolor? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta accusantium fugiat harum, atque vero, nulla autem voluptate repellendus ex debitis provident commodi et quis culpa consequatur unde dolores veniam nemo.</p>
+                <aside><p>Artigo escrito por <i>quem vc acha?</i></p></aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--Rodapé do site-->
+        <p>Developed by mrsaturnino</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
